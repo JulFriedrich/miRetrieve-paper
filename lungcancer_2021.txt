@@ -1,0 +1,828 @@
+PMID- 33569435
+OWN - NLM
+STAT- Publisher
+LR  - 20210211
+IS  - 2305-5839 (Print)
+IS  - 2305-5839 (Linking)
+VI  - 9
+IP  - 2
+DP  - 2021 Jan
+TI  - Identification of novel transcription factor-microRNA-mRNA co-regulatory networks in 
+      pulmonary large-cell neuroendocrine carcinoma.
+PG  - 133
+LID - 10.21037/atm-20-7759 [doi]
+AB  - BACKGROUND: Large cell neuroendocrine carcinoma (LCNEC) of the lung is a rare 
+      neuroendocrine neoplasm. Previous studies have shown that microRNAs (miRNAs) are 
+      widely involved in tumor regulation through targeting critical genes. However, it is 
+      unclear which miRNAs play vital roles in the pathogenesis of LCNEC, and how they 
+      interact with transcription factors (TFs) to regulate cancer-related genes. METHODS: 
+      To determine the novel TF-miRNA-target gene feed-forward loop (FFL) model of LCNEC, 
+      we integrated multi-omics data from Gene Expression Omnibus (GEO), Transcriptional 
+      Regulatory Relationships Unraveled by Sentence-Based Text Mining (TRRUST), 
+      Transcriptional Regulatory Element Database (TRED), and The experimentally validated 
+      microRNA-target interactions database (miRTarBase database). First, expression 
+      profile datasets for mRNAs (GSE1037) and miRNAs (GSE19945) were downloaded from the 
+      GEO database. Overlapping differentially expressed genes (DEGs) and differentially 
+      expressed miRNAs (DEMs) were identified through integrative analysis. The target 
+      genes of the FFL were obtained from the miRTarBase database, and the Gene Ontology 
+      (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) functional enrichment 
+      analyses were performed on the target genes. Then, we screened for key miRNAs in the 
+      FFL and performed gene regulatory network analysis based on key miRNAs. Finally, the 
+      TF-miRNA-target gene FFLs were constructed by the hypergeometric test. RESULTS: A 
+      total of 343 DEGs and 60 DEMs were identified in LCNEC tissues compared to normal 
+      tissues, including 210 down-regulated and 133 up-regulated genes, and 29 
+      down-regulated and 31 up-regulated miRNAs. Finally, the regulatory network of 
+      TF-miRNA-target gene was established. The key regulatory network modules included 
+      ETS1-miR195-CD36, TAOK1-miR7-1-3P-GRIA1, E2F3-miR195-CD36, and TEAD1-miR30A-CTHRC1. 
+      CONCLUSIONS: We constructed the TF-miRNA-target gene regulatory network, which is 
+      helpful for understanding the complex LCNEC regulatory mechanisms.
+CI  - 2021 Annals of Translational Medicine. All rights reserved.
+FAU - Cai, Cunliang
+AU  - Cai C
+AD  - Department of Respiratory and Critical Care Medicine, Beijing Tsinghua Changgung 
+      Hospital, School of Clinical Medicine, Tsinghua University, Beijing, China.
+FAU - Zeng, Qianli
+AU  - Zeng Q
+AD  - The South China Center for Innovative Pharmaceuticals, Guangzhou, China.
+FAU - Zhou, Guiliang
+AU  - Zhou G
+AD  - The South China Center for Innovative Pharmaceuticals, Guangzhou, China.
+FAU - Mu, Xiangdong
+AU  - Mu X
+AD  - Department of Respiratory and Critical Care Medicine, Beijing Tsinghua Changgung 
+      Hospital, School of Clinical Medicine, Tsinghua University, Beijing, China.
+LA  - eng
+PT  - Journal Article
+PL  - China
+TA  - Ann Transl Med
+JT  - Annals of translational medicine
+JID - 101617978
+PMC - PMC7867924
+OTO - NOTNLM
+OT  - Large cell neuroendocrine carcinoma (LCNEC)
+OT  - feed-forward loop (FFL)
+OT  - microRNA (miRNA)
+OT  - transcription factor-miRNA co-regulatory network (TF-miRNA co-regulatory network)
+COIS- Conflicts of Interest: All authors have completed the ICMJE uniform disclosure form 
+      (available at http://dx.doi.org/10.21037/atm-20-7759). The authors have no conflicts 
+      of interest to declare.
+EDAT- 2021/02/12 06:00
+MHDA- 2021/02/12 06:00
+CRDT- 2021/02/11 05:55
+PHST- 2021/02/11 05:55 [entrez]
+PHST- 2021/02/12 06:00 [pubmed]
+PHST- 2021/02/12 06:00 [medline]
+AID - atm-09-02-133 [pii]
+AID - 10.21037/atm-20-7759 [doi]
+PST - ppublish
+SO  - Ann Transl Med. 2021 Jan;9(2):133. doi: 10.21037/atm-20-7759.
+
+PMID- 33558703
+OWN - NLM
+STAT- Publisher
+LR  - 20210209
+IS  - 1476-5500 (Electronic)
+IS  - 0929-1903 (Linking)
+DP  - 2021 Feb 8
+TI  - Human umbilical vein endothelial cells-derived microRNA-203-containing extracellular 
+      vesicles alleviate non-small-cell lung cancer progression through modulating the 
+      DTL/p21 axis.
+LID - 10.1038/s41417-020-00292-3 [doi]
+AB  - Non-small cell lung cancer (NSCLC) is the most common type of lung cancer, and is 
+      characterized by extensive metastasis and poor prognosis. Extracellular vesicles 
+      (EVs) derived from endothelial cells carrying microRNAs (miRNAs/miRs) have 
+      diagnostic and therapeutic potential for NSCLC. We herein investigate the potential 
+      of EVs derived from human umbilical vein endothelial cells (HUVECs) to transfer 
+      miR-203 to affect the progression of NSCLC. miR-203 and p21 were poorly expressed 
+      while DTL was highly expressed both in NSCLC tissues and cell lines. We employed 
+      CCK-8 proliferation, colony formation, and Transwell migration and invasion assays 
+      to evaluate the effects of miR-203 on NSCLC cell behaviors using loss- and 
+      gain-function approaches. EVs were isolated from HUVECs and then co-cultured with 
+      the A549 cells transfected with mimic-NC or miR-203 inhibitor. miR-203 targeted DTL 
+      and downregulated its expression, subsequently leading to increased stability of p21 
+      which is a tumor suppressor. EV-enriched miR-203 from HUVECs suppressed malignant 
+      phenotypes of NSCLC cells and delayed tumor growth. In conclusion, miR-203 from 
+      HUVEC-derived EVs exerts inhibitory effects on the progression of NSCLC by targeting 
+      DTL and promoting p21 protein stability.
+FAU - Ma, Tiangang
+AU  - Ma T
+AD  - Department of Respiratory and Critical Care Medicine, the 2nd Hospital of Jilin 
+      University, Changchun, 130021, P.R. China.
+FAU - Hu, Yanbing
+AU  - Hu Y
+AD  - Department of Ultrasound, the 2nd Hospital of Jilin University, Changchun, 130021, 
+      P.R. China.
+FAU - Guo, Yinxue
+AU  - Guo Y
+AD  - Department of Clinical Laboratory, the 2nd Hospital of Jilin University, Changchun, 
+      130021, P.R. China.
+FAU - Zhang, Qinghua
+AU  - Zhang Q
+AUID- ORCID: 0000-0003-0066-5822
+AD  - Department of Respiratory and Critical Care Medicine, the 2nd Hospital of Jilin 
+      University, Changchun, 130021, P.R. China. ninozqh@jlu.edu.cn.
+LA  - eng
+PT  - Journal Article
+DEP - 20210208
+PL  - England
+TA  - Cancer Gene Ther
+JT  - Cancer gene therapy
+JID - 9432230
+SB  - IM
+EDAT- 2021/02/10 06:00
+MHDA- 2021/02/10 06:00
+CRDT- 2021/02/09 06:32
+PHST- 2020/04/02 00:00 [received]
+PHST- 2020/12/17 00:00 [accepted]
+PHST- 2020/12/03 00:00 [revised]
+PHST- 2021/02/09 06:32 [entrez]
+PHST- 2021/02/10 06:00 [pubmed]
+PHST- 2021/02/10 06:00 [medline]
+AID - 10.1038/s41417-020-00292-3 [pii]
+AID - 10.1038/s41417-020-00292-3 [doi]
+PST - aheadofprint
+SO  - Cancer Gene Ther. 2021 Feb 8. doi: 10.1038/s41417-020-00292-3.
+
+PMID- 33558335
+OWN - NLM
+STAT- Publisher
+LR  - 20210209
+IS  - 1538-7445 (Electronic)
+IS  - 0008-5472 (Linking)
+DP  - 2021 Feb 8
+TI  - miR-31 displays subtype specificity in lung cancer.
+LID - canres.2769.2020 [pii]
+LID - 10.1158/0008-5472.CAN-20-2769 [doi]
+AB  - miRNA rarely possess pan-oncogenic or tumor suppressive properties. Most miRNA 
+      function under tissue-specific contexts, acting as either tumor suppressors in one 
+      tissue, promoting oncogenesis in another, or having no apparent role in the 
+      regulation of processes associated with the hallmarks of cancer. What has been less 
+      clear is the role of miRNAs within cell types of the same tissue and the ability 
+      within each cell type to contribute to oncogenesis. In this study, we characterize 
+      the role of one such tissue-specific miRNA, miR-31, recently identified as the most 
+      oncogenic miRNA in lung adenocarcinoma, across the histological spectrum of human 
+      lung cancer. Compared to normal lung tissue, miR-31 was overexpressed in patient 
+      lung adenocarcinoma, squamous cell carcinoma, and large cell neuroendocrine 
+      carcinoma, but not small cell carcinoma or carcinoids. miR-31 promoted tumor growth 
+      in mice of xenografted human adenocarcinoma and squamous cell carcinoma cell lines, 
+      but not in large or small cell carcinoma lines. While miR-31 did not to promote 
+      primary tumor growth of large and small cell carcinoma, it did promote spontaneous 
+      metastasis. Mechanistically, miR-31 altered distinct cellular signaling programs 
+      within each histological subtype, resulting in distinct phenotypic differences. This 
+      is the first report distinguishing diverse functional roles for this microRNA across 
+      the spectrum of lung cancers and suggests that miR-31 has broad clinical value in 
+      human lung malignancy.
+CI  - Copyright ©2021, American Association for Cancer Research.
+FAU - Davenport, Mackenzie L
+AU  - Davenport ML
+AUID- ORCID: 0000-0002-5767-1900
+AD  - Genetics, University of Alabama at Birmingham.
+FAU - Echols, John B
+AU  - Echols JB
+AUID- ORCID: 0000-0003-0020-1059
+AD  - Genetics, University of Alabama at Birmingham.
+FAU - Silva, Austin D
+AU  - Silva AD
+AD  - Genetics, University of Alabama at Birmingham.
+FAU - Anderson, Joshua C
+AU  - Anderson JC
+AUID- ORCID: 0000-0002-6977-9054
+AD  - Department of Radiation Oncology, Kinome Core, University of Alabama at Birmingham.
+FAU - Owens, Philip
+AU  - Owens P
+AD  - Pathology, University of Colorado Boulder.
+FAU - Yates, Clayton
+AU  - Yates C
+AUID- ORCID: 0000-0001-5420-9852
+AD  - Biology and Center for Cancer Research, Tuskegee University.
+FAU - Wei, Qing
+AU  - Wei Q
+AD  - Pathology, University of Alabama at Birmingham.
+FAU - Harada, Shuko
+AU  - Harada S
+AD  - Department of Pathology, University of Alabama at Birmingham.
+FAU - Hurst, Douglas R
+AU  - Hurst DR
+AUID- ORCID: 0000-0002-1296-2210
+AD  - Department of Pathology, University of Alabama at Birmingham.
+FAU - Edmonds, Mick D
+AU  - Edmonds MD
+AD  - Genetics, University of Alabama at Birmingham edmonds1@uab.edu.
+LA  - eng
+PT  - Journal Article
+DEP - 20210208
+PL  - United States
+TA  - Cancer Res
+JT  - Cancer research
+JID - 2984705R
+SB  - IM
+EDAT- 2021/02/10 06:00
+MHDA- 2021/02/10 06:00
+CRDT- 2021/02/09 06:08
+PHST- 2021/02/03 00:00 [accepted]
+PHST- 2020/08/12 00:00 [received]
+PHST- 2020/12/14 00:00 [revised]
+PHST- 2021/02/09 06:08 [entrez]
+PHST- 2021/02/10 06:00 [pubmed]
+PHST- 2021/02/10 06:00 [medline]
+AID - 0008-5472.CAN-20-2769 [pii]
+AID - 10.1158/0008-5472.CAN-20-2769 [doi]
+PST - aheadofprint
+SO  - Cancer Res. 2021 Feb 8:canres.2769.2020. doi: 10.1158/0008-5472.CAN-20-2769.
+
+PMID- 33552286
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20210210
+IS  - 1792-1074 (Print)
+IS  - 1792-1082 (Electronic)
+IS  - 1792-1074 (Linking)
+VI  - 21
+IP  - 2
+DP  - 2021 Feb
+TI  - Circulating plasma exosomal miRNA profiles serve as potential metastasis-related 
+      biomarkers for hepatocellular carcinoma.
+PG  - 168
+LID - 10.3892/ol.2021.12429 [doi]
+LID - 168
+AB  - Exosomes carry functional molecules that can regulate cancer progression. 
+      Understanding the function of exosomal markers may provide invaluable insights into 
+      the mechanism of metastasis in hepatocellular carcinoma (HCC). The aim of the 
+      present study was to identify metastasis-associated microRNAs (miRNAs/miRs) 
+      expressed in plasma exosomes. A miRNA microarray and reverse 
+      transcription-quantitative PCR were used to analyze the plasma exosome miRNA 
+      expression profiles of patients with metastatic or non-metastatic HCC. Receiver 
+      operating characteristic (ROC) curve and Kaplan-Meier analyses were used to evaluate 
+      the predictive performance and prognostic efficacy of candidate miRNAs identified in 
+      the Gene Expression Omnibus database (dataset accession no. GSE67140). 
+      Bioinformatics analysis was used to examine the role of exosomal miRNAs in HCC 
+      metastasis. A total of 32 miRNAs were differentially expressed in plasma exosomes of 
+      patients with metastatic HCC compared with in those of patients with non-metastatic 
+      HCC. Additionally, the expression levels of six miRNAs were consistent between 
+      plasma exosome samples and matched tissue samples. ROC analysis demonstrated that 
+      miR-18a, miR-27a and miR-20b could discriminate metastatic HCC from non-metastatic 
+      HCC. Furthermore, the prognostic efficacy of the combination of three miRNAs 
+      (miR-18a, miR-20b and miR-221) was superior to that of individual miRNAs. Survival 
+      analysis demonstrated that high expression levels of the candidate miRNAs were 
+      associated with poor prognosis. Bioinformatics analysis indicated that the potential 
+      target genes of these miRNAs were involved in biological processes, molecular 
+      functions and cellular components that were associated with metastasis. The present 
+      findings suggested that these exosomal miRNAs may serve important roles in HCC lung 
+      metastasis and could represent a complementary clinical tool for the assessment of 
+      HCC prognosis.
+CI  - Copyright: © Huang et al.
+FAU - Huang, Chunyu
+AU  - Huang C
+AD  - Department of Endoscopy, Sun Yat-sen University Cancer Center, Guangzhou, Guangdong 
+      510060, P.R. China.
+AD  - State Key Laboratory of Oncology in South China, Sun Yat-sen University Cancer 
+      Center, Guangzhou, Guangdong 510060, P.R. China.
+AD  - Collaborative Innovation Center for Cancer Medicine, Guangzhou, Guangdong 510060, 
+      P.R. China.
+FAU - Tang, Shuiying
+AU  - Tang S
+AD  - Department of Interventional Radiology, Nanfang Hospital, Southern Medical 
+      University, Guangzhou, Guangdong 510515, P.R. China.
+FAU - Shen, Dong
+AU  - Shen D
+AD  - Department of Epidemiology, Southern Medical University, Guangzhou, Guangdong 
+      510515, P.R. China.
+FAU - Li, Xiangzhao
+AU  - Li X
+AD  - Department of Pathology, Nanfang Hospital, Southern Medical University, Guangzhou, 
+      Guangdong 510515, P.R. China.
+AD  - Department of Pathology, Southern Medical University, Guangzhou, Guangdong 510515, 
+      P.R. China.
+FAU - Liang, Li
+AU  - Liang L
+AD  - Department of Pathology, Nanfang Hospital, Southern Medical University, Guangzhou, 
+      Guangdong 510515, P.R. China.
+AD  - Department of Pathology, Southern Medical University, Guangzhou, Guangdong 510515, 
+      P.R. China.
+FAU - Ding, Yanqing
+AU  - Ding Y
+AD  - Department of Pathology, Nanfang Hospital, Southern Medical University, Guangzhou, 
+      Guangdong 510515, P.R. China.
+AD  - Department of Pathology, Southern Medical University, Guangzhou, Guangdong 510515, 
+      P.R. China.
+FAU - Xu, Bihong
+AU  - Xu B
+AD  - Department of Pathology, Nanfang Hospital, Southern Medical University, Guangzhou, 
+      Guangdong 510515, P.R. China.
+AD  - Department of Pathology, Southern Medical University, Guangzhou, Guangdong 510515, 
+      P.R. China.
+LA  - eng
+PT  - Journal Article
+DEP - 20210104
+TA  - Oncol Lett
+JT  - Oncology letters
+JID - 101531236
+PMC - PMC7798106
+OTO - NOTNLM
+OT  - biomarker
+OT  - exosome
+OT  - hepatocellular carcinoma
+OT  - metastasis
+OT  - microRNA
+EDAT- 2021/02/09 06:00
+MHDA- 2021/02/09 06:01
+CRDT- 2021/02/08 05:36
+PHST- 2020/04/26 00:00 [received]
+PHST- 2020/12/02 00:00 [accepted]
+PHST- 2021/02/08 05:36 [entrez]
+PHST- 2021/02/09 06:00 [pubmed]
+PHST- 2021/02/09 06:01 [medline]
+AID - OL-0-0-12429 [pii]
+AID - 10.3892/ol.2021.12429 [doi]
+PST - ppublish
+SO  - Oncol Lett. 2021 Feb;21(2):168. doi: 10.3892/ol.2021.12429. Epub 2021 Jan 4.
+
+PMID- 33552284
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20210210
+IS  - 1792-1074 (Print)
+IS  - 1792-1082 (Electronic)
+IS  - 1792-1074 (Linking)
+VI  - 21
+IP  - 2
+DP  - 2021 Feb
+TI  - Association between B-Myb proto-oncogene and the development of malignant tumors.
+PG  - 166
+LID - 10.3892/ol.2021.12427 [doi]
+LID - 166
+AB  - B-Myb is a critical transcription factor in regulating cell cycle. Dysregulated 
+      expression of B-Myb promotes tumor formation and development. B-Myb is a 
+      proto-oncogene ubiquitously expressed in proliferating cells, which maintains normal 
+      cell cycle progression. It participates in cell apoptosis, tumorigenesis and aging. 
+      In addition, B-Myb is overexpressed in several malignant tumors, including breast 
+      cancer, lung cancer and hepatocellular carcinoma, and is associated with tumor 
+      development. B-Myb expression is also associated with the prognosis of patients with 
+      malignant tumors. Both microRNAs and E2F family of transcription factors (E2Fs) 
+      contribute to the function of B-Myb. The present review highlights the association 
+      between B-Myb and malignant tumors, and offers a theoretical reference for the 
+      diagnosis and treatment of malignant tumors.
+CI  - Copyright: © Jin et al.
+FAU - Jin, Yuelei
+AU  - Jin Y
+AD  - Department of Basic Medical Sciences, Taizhou University, Taizhou, Zhejiang 318000, 
+      P.R. China.
+AD  - Department of Sleep Medicine Center, Taizhou Second People's Hospital, Taizhou, 
+      Zhejiang 317200, P.R. China.
+FAU - Qi, Gangqiao
+AU  - Qi G
+AD  - Department of Sleep Medicine Center, Taizhou Second People's Hospital, Taizhou, 
+      Zhejiang 317200, P.R. China.
+FAU - Chen, Guang
+AU  - Chen G
+AD  - Department of Basic Medical Sciences, Taizhou University, Taizhou, Zhejiang 318000, 
+      P.R. China.
+FAU - Wang, Chen
+AU  - Wang C
+AD  - Department of Respiratory Medicine, Municipal Hospital Affiliated to Medical School 
+      of Taizhou University, Taizhou, Zhejiang 318000, P.R. China.
+FAU - Fan, Xiaoyan
+AU  - Fan X
+AD  - Department of Basic Medical Sciences, Taizhou University, Taizhou, Zhejiang 318000, 
+      P.R. China.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20210104
+TA  - Oncol Lett
+JT  - Oncology letters
+JID - 101531236
+PMC - PMC7798104
+OTO - NOTNLM
+OT  - B-Myb
+OT  - cancer
+OT  - mechanisms
+EDAT- 2021/02/09 06:00
+MHDA- 2021/02/09 06:01
+CRDT- 2021/02/08 05:36
+PHST- 2020/05/22 00:00 [received]
+PHST- 2020/12/01 00:00 [accepted]
+PHST- 2021/02/08 05:36 [entrez]
+PHST- 2021/02/09 06:00 [pubmed]
+PHST- 2021/02/09 06:01 [medline]
+AID - OL-0-0-12427 [pii]
+AID - 10.3892/ol.2021.12427 [doi]
+PST - ppublish
+SO  - Oncol Lett. 2021 Feb;21(2):166. doi: 10.3892/ol.2021.12427. Epub 2021 Jan 4.
+
+PMID- 33344462
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20210208
+IS  - 2296-634X (Print)
+IS  - 2296-634X (Electronic)
+IS  - 2296-634X (Linking)
+VI  - 8
+DP  - 2020
+TI  - MicroRNA-16-1-3p Represses Breast Tumor Growth and Metastasis by Inhibiting 
+      PGK1-Mediated Warburg Effect.
+PG  - 615154
+LID - 10.3389/fcell.2020.615154 [doi]
+LID - 615154
+AB  - The Warburg effect (aerobic glycolysis) is a hallmark of cancer and is becoming a 
+      promising target for diagnosis and therapy. Phosphoglycerate kinase 1 (PGK1) is the 
+      first adenosine triphosphate (ATP)-generating glycolytic enzyme in the aerobic 
+      glycolysis pathway and plays an important role in cancer development and 
+      progression. However, how microRNAs (miRNAs) regulate PGK1-mediated aerobic 
+      glycolysis remains unknown. Here, we show that miR-16-1-3p inhibits PGK1 expression 
+      by directly targeting its 3'-untranslated region. Through inhibition of PGK1, 
+      miR-16-1-3p suppressed aerobic glycolysis by decreasing glucose uptake, lactate and 
+      ATP production, and extracellular acidification rate, and increasing oxygen 
+      consumption rate in breast cancer cells. Aerobic glycolysis regulated by the 
+      miR-16-1-3p/PGK1 axis is critical for modulating breast cancer cell proliferation, 
+      migration, invasion and metastasis in vitro and in vivo. In breast cancer patients, 
+      miR-16-1-3p expression is negatively correlated with PGK1 expression and breast 
+      cancer lung metastasis. Our findings provide clues regarding the role of miR-16-1-3p 
+      as a tumor suppressor in breast cancer through PGK1 suppression. Targeting PGK1 
+      through miR-16-1-3p could be a promising strategy for breast cancer therapy.
+CI  - Copyright © 2020 Ye, Liang, Zhang and Zhang.
+FAU - Ye, Tianxin
+AU  - Ye T
+AD  - College of Medicine, Yanbian University, Yanji, China.
+AD  - Department of Medical Molecular Biology, Beijing Institute of Biotechnology, 
+      Collaborative Innovation Center for Cancer Medicine, Beijing, China.
+FAU - Liang, Yingchun
+AU  - Liang Y
+AD  - Department of Medical Molecular Biology, Beijing Institute of Biotechnology, 
+      Collaborative Innovation Center for Cancer Medicine, Beijing, China.
+FAU - Zhang, Deyu
+AU  - Zhang D
+AD  - Department of Medical Molecular Biology, Beijing Institute of Biotechnology, 
+      Collaborative Innovation Center for Cancer Medicine, Beijing, China.
+FAU - Zhang, Xuewu
+AU  - Zhang X
+AD  - College of Medicine, Yanbian University, Yanji, China.
+LA  - eng
+PT  - Journal Article
+DEP - 20201203
+TA  - Front Cell Dev Biol
+JT  - Frontiers in cell and developmental biology
+JID - 101630250
+EIN - Front Cell Dev Biol. 2021 Jan 21;9:649787. PMID: 33553193
+PMC - PMC7744604
+OTO - NOTNLM
+OT  - PGK1
+OT  - cell proliferation
+OT  - metastasis
+OT  - miR-16-1-3p
+OT  - the Warburg effect
+COIS- The authors declare that the research was conducted in the absence of any commercial 
+      or financial relationships that could be construed as a potential conflict of 
+      interest.
+EDAT- 2020/12/22 06:00
+MHDA- 2020/12/22 06:01
+CRDT- 2020/12/21 06:08
+PHST- 2020/10/08 00:00 [received]
+PHST- 2020/11/09 00:00 [accepted]
+PHST- 2020/12/21 06:08 [entrez]
+PHST- 2020/12/22 06:00 [pubmed]
+PHST- 2020/12/22 06:01 [medline]
+AID - 10.3389/fcell.2020.615154 [doi]
+PST - epublish
+SO  - Front Cell Dev Biol. 2020 Dec 3;8:615154. doi: 10.3389/fcell.2020.615154. 
+      eCollection 2020.
+
+PMID- 33546686
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20210210
+IS  - 1475-2867 (Print)
+IS  - 1475-2867 (Electronic)
+IS  - 1475-2867 (Linking)
+VI  - 21
+IP  - 1
+DP  - 2021 Feb 5
+TI  - M2 macrophages-derived exosomal microRNA-501-3p promotes the progression of lung 
+      cancer via targeting WD repeat domain 82.
+PG  - 91
+LID - 10.1186/s12935-021-01783-5 [doi]
+LID - 91
+AB  - BACKGROUND: Exosomes are known to transmit microRNAs (miRNAs) to affect cancer 
+      progression, while the role of M2 macrophages-derived exosomes (M2 exosomes) 
+      conveying miR-501-3p in lung cancer (LC) remains unknown. We aim to explore the role 
+      of exosomal miR-501-3p in LC development via targeting WD repeat domain 82 (WDR82). 
+      METHODS: Lung cancer tissue and normal tissue specimens were collected, in which 
+      tumor-associated macrophages (TAM) were measured by immunohistochemistry. M2 
+      macrophages were induced and treated with altered miR-501-3p, and then the exosomes 
+      were extracted and identified. MiR-501-3p and WDR82 expression in LC tissues and 
+      cell liens was determined. The predictive role of miR-501-3p in prognosis of LC 
+      patients was assessed, and the proliferation, colony formation ability, invasion, 
+      migration and apoptosis of the LC cells were determined. Targeting relationship 
+      between miR-501-3p and WDR82 was confirmed. RESULTS: TAM level was elevated in lung 
+      cancer tissues. MiR-501-3p was upregulated while WDR82 was downregulated in LC 
+      tissues and cell lines, and the M2 exosomes further upregulated miR-501-3p. M2 
+      exosomes and exosomal miR-501-3p promoted LC cell growth. MiR-501-3p inhibition 
+      reversed the effect of M2 exosomes on LC cells. WDR82 was confirmed as a target gene 
+      of miR-501-3p. CONCLUSION: M2 macrophages-derived exosomal miR-501-3p promotes the 
+      progression of LC via downregulating WDR82.
+FAU - Lei, Jie
+AU  - Lei J
+AD  - Department of Thoracic Surgery, The Second Affiliated Hospital of Air Force Medical 
+      University, 569 Xin Si Road, Xi'an, 710038, Shanxi, China.
+FAU - Chen, Peng
+AU  - Chen P
+AD  - Department of Thoracic Surgery, The Second Affiliated Hospital of Air Force Medical 
+      University, 569 Xin Si Road, Xi'an, 710038, Shanxi, China.
+FAU - Zhang, Feng
+AU  - Zhang F
+AD  - Department of Oncology, The Second Affiliated Hospital of Air Force Medical 
+      University, Xi'an, 710038, Shanxi, China.
+FAU - Zhang, Na
+AU  - Zhang N
+AD  - Department of Thoracic Surgery, The Second Affiliated Hospital of Air Force Medical 
+      University, 569 Xin Si Road, Xi'an, 710038, Shanxi, China.
+FAU - Zhu, Jianfei
+AU  - Zhu J
+AD  - Department of Thoracic Surgery, The Second Affiliated Hospital of Air Force Medical 
+      University, 569 Xin Si Road, Xi'an, 710038, Shanxi, China.
+FAU - Wang, Xiaoping
+AU  - Wang X
+AD  - Department of Thoracic Surgery, The Second Affiliated Hospital of Air Force Medical 
+      University, 569 Xin Si Road, Xi'an, 710038, Shanxi, China. Wangxiaoping7456@163.com.
+FAU - Jiang, Tao
+AU  - Jiang T
+AUID- ORCID: 0000-0002-6637-8407
+AD  - Department of Thoracic Surgery, The Second Affiliated Hospital of Air Force Medical 
+      University, 569 Xin Si Road, Xi'an, 710038, Shanxi, China. Jiangtao4153@163.com.
+LA  - eng
+PT  - Journal Article
+DEP - 20210205
+TA  - Cancer Cell Int
+JT  - Cancer cell international
+JID - 101139795
+PMC - PMC7866732
+OTO - NOTNLM
+OT  - Lung cancer
+OT  - M2 macrophages-derived exosome
+OT  - MicroRNA-501-3p
+OT  - WD repeat domain 82
+COIS- The authors declare that they have no conflicts of interest.
+EDAT- 2021/02/07 06:00
+MHDA- 2021/02/07 06:01
+CRDT- 2021/02/06 05:27
+PHST- 2020/09/25 00:00 [received]
+PHST- 2021/01/20 00:00 [accepted]
+PHST- 2021/02/06 05:27 [entrez]
+PHST- 2021/02/07 06:00 [pubmed]
+PHST- 2021/02/07 06:01 [medline]
+AID - 10.1186/s12935-021-01783-5 [pii]
+AID - 1783 [pii]
+AID - 10.1186/s12935-021-01783-5 [doi]
+PST - epublish
+SO  - Cancer Cell Int. 2021 Feb 5;21(1):91. doi: 10.1186/s12935-021-01783-5.
+
+PMID- 33546236
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20210208
+IS  - 2075-4426 (Print)
+IS  - 2075-4426 (Linking)
+VI  - 11
+IP  - 2
+DP  - 2021 Feb 3
+TI  - Role of microRNAs in Lung Carcinogenesis Induced by Asbestos.
+LID - 97 [pii]
+LID - 10.3390/jpm11020097 [doi]
+AB  - MicroRNAs are a class of small noncoding endogenous RNAs 19-25 nucleotides long, 
+      which play an important role in the post-transcriptional regulation of gene 
+      expression by targeting mRNA targets with subsequent repression of translation. 
+      MicroRNAs are involved in the pathogenesis of numerous diseases, including cancer. 
+      Lung cancer is the leading cause of cancer death in the world. Lung cancer is 
+      usually associated with tobacco smoking. However, about 25% of lung cancer cases 
+      occur in people who have never smoked. According to the International Agency for 
+      Research on Cancer, asbestos has been classified as one of the cancerogenic factors 
+      for lung cancer. The mechanism of malignant transformation under the influence of 
+      asbestos is associated with the genotoxic effect of reactive oxygen species, which 
+      initiate the processes of DNA damage in the cell. However, epigenetic mechanisms 
+      such as changes in the microRNA expression profile may also be implicated in the 
+      pathogenesis of asbestos-induced lung cancer. Numerous studies have shown that 
+      microRNAs can serve as a biomarker of the effects of various adverse environmental 
+      factors on the human body. This review examines the role of microRNAs, the 
+      expression profile of which changes upon exposure to asbestos, in key processes of 
+      carcinogenesis, such as proliferation, cell survival, metastasis, neo-angiogenesis, 
+      and immune response avoidance.
+FAU - Bersimbaev, Rakhmetkazhy
+AU  - Bersimbaev R
+AD  - Department of General Biology and Genomics, Institute of Cell Biology and 
+      Biotechnology, L.N. Gumilyov Eurasian National University, Nur-Sultan 010008, 
+      Kazakhstan.
+FAU - Bulgakova, Olga
+AU  - Bulgakova O
+AUID- ORCID: 0000-0003-3272-0638
+AD  - Department of General Biology and Genomics, Institute of Cell Biology and 
+      Biotechnology, L.N. Gumilyov Eurasian National University, Nur-Sultan 010008, 
+      Kazakhstan.
+FAU - Aripova, Akmaral
+AU  - Aripova A
+AD  - Department of General Biology and Genomics, Institute of Cell Biology and 
+      Biotechnology, L.N. Gumilyov Eurasian National University, Nur-Sultan 010008, 
+      Kazakhstan.
+FAU - Kussainova, Assiya
+AU  - Kussainova A
+AUID- ORCID: 0000-0002-1313-9779
+AD  - Department of General Biology and Genomics, Institute of Cell Biology and 
+      Biotechnology, L.N. Gumilyov Eurasian National University, Nur-Sultan 010008, 
+      Kazakhstan.
+FAU - Ilderbayev, Oralbek
+AU  - Ilderbayev O
+AD  - Department of General Biology and Genomics, Institute of Cell Biology and 
+      Biotechnology, L.N. Gumilyov Eurasian National University, Nur-Sultan 010008, 
+      Kazakhstan.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20210203
+PL  - Switzerland
+TA  - J Pers Med
+JT  - Journal of personalized medicine
+JID - 101602269
+OTO - NOTNLM
+OT  - asbestos exposure
+OT  - carcinogenesis
+OT  - lung cancer
+OT  - microRNA
+EDAT- 2021/02/07 06:00
+MHDA- 2021/02/07 06:01
+CRDT- 2021/02/06 01:02
+PHST- 2020/12/14 00:00 [received]
+PHST- 2021/01/25 00:00 [revised]
+PHST- 2021/01/29 00:00 [accepted]
+PHST- 2021/02/06 01:02 [entrez]
+PHST- 2021/02/07 06:00 [pubmed]
+PHST- 2021/02/07 06:01 [medline]
+AID - jpm11020097 [pii]
+AID - 10.3390/jpm11020097 [doi]
+PST - epublish
+SO  - J Pers Med. 2021 Feb 3;11(2):97. doi: 10.3390/jpm11020097.
+
+PMID- 33542659
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20210206
+IS  - 1179-1322 (Print)
+IS  - 1179-1322 (Electronic)
+IS  - 1179-1322 (Linking)
+VI  - 13
+DP  - 2021
+TI  - CircRNA_0000429 Regulates Development of NSCLC by Acting as a Sponge of miR-1197 to 
+      Control MADD.
+PG  - 861-870
+LID - 10.2147/CMAR.S270790 [doi]
+AB  - BACKGROUND: Non-small-cell lung carcinoma (NSCLC) is the most common type of lung 
+      cancer. Circular RNA_0000429 (circ_0000429) is an identified circular RNA (circRNA) 
+      that is correlated with cancer progression. However, the role of circ_0000429 in 
+      NSCLC remains unknown. In the present study, we aimed to investigate the function of 
+      circ_0000429 in NSCLC and the underlying mechanism. METHODS: The expression patterns 
+      of circ_0000429 were determined using qRT-PCR in NSCLC samples and cell lines. The 
+      subcellular distribution of circ_0000429 in NSCLC cells was analyzed by fluorescence 
+      in situ hybridization (FISH). Cell proliferation was examined utilizing the CCK-8 
+      assay. Cell migration and invasion were evaluated using the transwell assay. We used 
+      the bioinformatics software TargetScan and miRanda to predict circRNA-miRNA and 
+      miRNA-mRNA interactions. RESULTS: Our results showed that circ_0000429 expressions 
+      were significantly upregulated in NSCLC tissues and cell lines. Knockdown of 
+      circ_0000429 significantly inhibited the cell proliferation, migration, and invasion 
+      of NSCLC cells in vitro. Furthermore, we demonstrated that circ_0000429 acted as a 
+      sponge to absorb microRNA-1197 (miR-1197) and promoted MADD expression. CONCLUSION: 
+      Collectively, our results demonstrated that circ_0000429 exhibited a carcinogenic 
+      role by sponging miR-1197 and regulating CMADD expression in NSCLC. These findings 
+      provided evidence for understanding the role of circ_0000429 in NSCLC tumorigenesis.
+CI  - © 2021 Wang et al.
+FAU - Wang, Jun-Yan
+AU  - Wang JY
+AD  - Department of Medical Oncology, Fourth Hospital of Hebei Medical University, 
+      Shijiazhuang, Hebei 050000, People's Republic of China.
+FAU - Zhang, Fan
+AU  - Zhang F
+AD  - Department of Medical Oncology, Fourth Hospital of Hebei Medical University, 
+      Shijiazhuang, Hebei 050000, People's Republic of China.
+FAU - Hong, Lei
+AU  - Hong L
+AD  - Department of Medical Oncology, Fourth Hospital of Hebei Medical University, 
+      Shijiazhuang, Hebei 050000, People's Republic of China.
+FAU - Wei, Su-Ju
+AU  - Wei SJ
+AD  - Department of Medical Oncology, Fourth Hospital of Hebei Medical University, 
+      Shijiazhuang, Hebei 050000, People's Republic of China.
+LA  - eng
+PT  - Journal Article
+DEP - 20210129
+TA  - Cancer Manag Res
+JT  - Cancer management and research
+JID - 101512700
+PMC - PMC7853430
+OTO - NOTNLM
+OT  - MADD
+OT  - NSCLC
+OT  - circRNA_0000429
+OT  - miRNA-1197
+COIS- The authors declare no competing interests.
+EDAT- 2021/02/06 06:00
+MHDA- 2021/02/06 06:01
+CRDT- 2021/02/05 05:58
+PHST- 2020/08/22 00:00 [received]
+PHST- 2020/12/04 00:00 [accepted]
+PHST- 2021/02/05 05:58 [entrez]
+PHST- 2021/02/06 06:00 [pubmed]
+PHST- 2021/02/06 06:01 [medline]
+AID - 270790 [pii]
+AID - 10.2147/CMAR.S270790 [doi]
+PST - epublish
+SO  - Cancer Manag Res. 2021 Jan 29;13:861-870. doi: 10.2147/CMAR.S270790. eCollection 
+      2021.
+
+PMID- 33542645
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20210206
+IS  - 1178-7074 (Print)
+IS  - 1178-7074 (Electronic)
+IS  - 1178-7074 (Linking)
+VI  - 14
+DP  - 2021
+TI  - LncRNA PRNCR1 rs1456315 and CCAT2 rs6983267 Polymorphisms on 8q24 Associated with 
+      Lung Cancer.
+PG  - 255-266
+LID - 10.2147/IJGM.S290997 [doi]
+AB  - BACKGROUND: Long noncoding RNA single nucleotide polymorphisms (lncRNA-SNPs) PCAT1 
+      rs710886, PRNCR1 rs1456315 and CCAT2 rs6983267 on 8q24 region present 
+      generalizability in the susceptibility to multiple cancers, however, the influence 
+      of rs710886, rs1456315 and rs6983267 on lung cancer has not been assessed. The aim 
+      of this study was to investigate associations between three lncRNA-SNPs and lung 
+      cancer. METHODS: A case-control study was performed on 438 patients with lung cancer 
+      and 456 healthy controls in the Han population from southern China. The collected 
+      samples were genotyped by the TaqMan genotyping, and the association with clinical 
+      characteristics, including age, gender, drinking status, smoking status, 
+      pathological types and clinical stages were analyzed. And the SNP function 
+      prediction was based on lncRNASNP2, RNAfold and GTEx. RESULTS: The rs1456315 T 
+      allele increased the risk of lung cancer [OR=1.95, 95% CI (1.58-2.43), P=0.003] 
+      compared to the rs1456315 C allele, and rs1456315 significantly increased the risk 
+      of lung cancer in the dominant model [OR=1.86, 95% CI (1.16-3.00), P=0.002]. The 
+      rs6983267 G allele, compared with the T allele, increased the risk of lung cancer 
+      [OR=1.29, 95% CI (1.07-1.57), P=0.007], and rs6983267 was identified as a risk 
+      factor for lung cancer [OR=1.28, 95% CI (1.06-1.55), P=0.003] in the additive model. 
+      Both rs1456315 and rs6983267 demonstrated significance after adjusting for the 
+      smoking status, drinking status and age. The structure prediction found rs6983267 
+      and rs1456315 influence the secondary structure of its lncRNA. The results from 
+      lncRNASNP2 indicated that rs6983267 and rs1456315 change gain/loss target of miRNAs. 
+      CONCLUSION: PRNCR1 rs1456315 and CCAT2 rs6983267 on 8q24 region are significantly 
+      associated with lung cancer in the Han population of southern China and alter the 
+      potential biological function in bioinformatic analysis, and the results further 
+      extended generalism of the susceptibility of cancer-associated lncRNA-SNPs to lung 
+      cancer and underlying mechanism involved in lung cancer.
+CI  - © 2021 Yu et al.
+FAU - Yu, Wei-Ling
+AU  - Yu WL
+AD  - Oncology Department of Haikou City People's Hospital, Haikou 570208, Hainan, 
+      People's Republic of China.
+AD  - Key Laboratory of Emergency and Trauma, Ministry of Education of Hainan Medical 
+      University, Haikou 571199, Hainan, People's Republic of China.
+FAU - Yao, Jin-Jian
+AU  - Yao JJ
+AD  - Key Laboratory of Emergency and Trauma, Ministry of Education of Hainan Medical 
+      University, Haikou 571199, Hainan, People's Republic of China.
+AD  - Emergency Center of Hainan General Hospital Affiliated to Hainan Medical University, 
+      Haikou 570311, Hainan, People's Republic of China.
+FAU - Xie, Zong-Zhou
+AU  - Xie ZZ
+AD  - Oncology Department of Haikou City People's Hospital, Haikou 570208, Hainan, 
+      People's Republic of China.
+FAU - Huang, Yan-Jing
+AU  - Huang YJ
+AD  - Oncology Department of Hainan General Hospital Affiliated to Hainan Medical 
+      University, Haikou 570311, Hainan, People's Republic of China.
+FAU - Xiao, Sha
+AU  - Xiao S
+AUID- ORCID: 0000-0002-1645-4846
+AD  - School of Public Health of Hainan Medical University, Haikou 571199, Hainan, 
+      People's Republic of China.
+LA  - eng
+PT  - Journal Article
+DEP - 20210125
+TA  - Int J Gen Med
+JT  - International journal of general medicine
+JID - 101515487
+PMC - PMC7851581
+OTO - NOTNLM
+OT  - colon cancer-associated transcript 2
+OT  - long noncoding RNAs
+OT  - prostate cancer noncoding RNA 1
+OT  - prostate cancer-associated transcript 1
+OT  - single nucleotide polymorphism
+COIS- The authors state that they have no conflicts of interest to disclose.
+EDAT- 2021/02/06 06:00
+MHDA- 2021/02/06 06:01
+CRDT- 2021/02/05 05:58
+PHST- 2020/11/12 00:00 [received]
+PHST- 2020/12/18 00:00 [accepted]
+PHST- 2021/02/05 05:58 [entrez]
+PHST- 2021/02/06 06:00 [pubmed]
+PHST- 2021/02/06 06:01 [medline]
+AID - 290997 [pii]
+AID - 10.2147/IJGM.S290997 [doi]
+PST - epublish
+SO  - Int J Gen Med. 2021 Jan 25;14:255-266. doi: 10.2147/IJGM.S290997. eCollection 2021.
