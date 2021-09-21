@@ -1,0 +1,375 @@
+---
+title: "miRetrieve NARGAB - Supplementary"
+author: Julian Friedrich, Hans-Peter Hammes, Guido Krenning
+date: "`r Sys.Date()`"
+output:
+  bookdown::html_document2:
+    base_format: rmarkdown::html_document
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    theme: cerulean
+---
+
+```{r global}
+# Set global options to hide messages and warnings to improve overview;
+# center images
+knitr::opts_chunk$set(
+  warning=FALSE,
+  message=FALSE,
+  fig.align='center'
+)
+```
+
+# Load libraries
+
+```{r}
+library(miRetrieve)
+library(magrittr) # Load magrittr for %>%
+library(ggplot2) # Load ggplot2 for plotting
+library(easyPubMed) # Load easyPubMed, access to PubMed
+library(dplyr) # Data wrangling
+library(tidyr) # Data wrangling
+library(patchwork) # Group graphs
+```
+
+# Load atherosclerosis abstracts 
+
+```{r}
+# PubMed file of abstracts matching "atherosclerosis miRNA"
+file <- "atherosclerosis_2021.txt"
+
+# Load abstracts
+df_atherosclerosis <- read_pubmed(file, topic = "Atherosclerosis") %>% 
+    # Subset for original articles
+    subset_research() %>%
+    # Extract miRNA names mentioned at least twice/abstract
+    extract_mir_df(threshold = 2)
+    
+# Number of abstracts
+length(unique(df_atherosclerosis[["PMID"]]))
+
+# Number of rows
+nrow(df_atherosclerosis)
+```
+
+# Compare extraction count to PubMed
+
+## Divide miRNAs depending on lettered suffixes
+
+```{r}
+# Extract all miRNAs
+df_athero_comparison <- read_pubmed(file,
+                        topic = "Atherosclerosis") %>% 
+    extract_mir_df(threshold = 1,
+                   extract_letters = TRUE)
+
+# Count miRNAs
+df_count_letter <- df_athero_comparison %>% 
+    count_mir() %>% 
+  # Filter for miRNAs with lettered suffixes
+    dplyr::filter(stringr::str_detect(miRNA, "\\d[a-z]")) %>% 
+    dplyr::slice(1:30)
+
+# Filter for miRNAs with lettered suffixes
+# Extract miRNA numbers of miRNAs with lettered suffixes
+df_mir_letter <- df_athero_comparison %>% 
+    count_mir() %>% 
+    dplyr::filter(stringr::str_detect(miRNA, "\\d[a-z]")) %>% 
+    filter(Mentioned_n >= 10) %>% 
+    pull(miRNA) %>% 
+    stringr::str_extract_all("miR-\\d+|let-7") %>% 
+    unlist()
+
+# Filter for miRNAs without lettered suffixes
+df_count_no_letter <- df_athero_comparison %>% 
+    count_mir() %>% 
+    dplyr::filter(stringr::str_detect(miRNA, "\\d$")) %>% 
+    filter(!miRNA %in% df_mir_letter) %>% 
+    dplyr::slice(1:30)
+```
+
+## Obtain PubMed IDs
+
+```{r}
+# Obtain PubMed IDs from query "{miRNA} + atherosclerosis" 
+# as of February 11th, 2021
+compare_count <- function(mir) {
+    query <- paste('(',mir, 'atherosclerosis) AND (("1990/01/01"[Date - Entry] : "2021/02/11"[Date - Entry]))')
+    pubmed_ids <- get_pubmed_ids(query) %>% 
+        fetch_all_pubmed_ids()
+    return(pubmed_ids)
+}
+
+count_pubmed_vec <- purrr::map(df_count_no_letter$miRNA, compare_count) %>% 
+    purrr::set_names(df_count_no_letter$miRNA)
+
+count_pubmed_vec_letter <- purrr::map(df_count_letter$miRNA, compare_count) %>% 
+    purrr::set_names(df_count_letter$miRNA)
+```
+
+## Figure 1: Compare miRetrieve with PubMed's miRNA count
+
+```{r}
+# Obtain number of PubMed results
+length_pmid <- purrr::map(count_pubmed_vec, length) %>% 
+    unlist()
+
+# Add number of PubMed results to dataframe "df_count_no_letter"
+df_count_no_letter[3] <- length_pmid
+names(df_count_no_letter)[3] <- "PubMed"
+names(df_count_no_letter)[2] <- "miRetrieve"
+
+# Plot # of miRNAs with miRetrieve vs. PubMed (no letters)
+count_plot <- df_count_no_letter %>%
+    mutate(miRNA = forcats::fct_reorder(miRNA, miRetrieve)) %>% 
+    pivot_longer(cols = c(miRetrieve, PubMed)) %>%
+    mutate(name = forcats::fct_rev(name)) %>% 
+    ggplot(aes(x = miRNA, y = value, fill = name)) +
+    geom_col(position = "dodge") +
+    coord_flip() +
+    guides(fill = FALSE) +
+    scale_fill_brewer(palette = "Dark2") +
+    theme_classic() +
+    ylab("# of articles") + 
+    scale_y_continuous(expand = c(0,0))
+
+# Obtain number of PubMed results
+length_pmid_letter <- purrr::map(count_pubmed_vec_letter, length) %>% 
+    unlist()
+
+# Add number of PubMed results to dataframe "df_count_letter"
+df_count_letter[3] <- length_pmid_letter
+names(df_count_letter)[3] <- "PubMed"
+names(df_count_letter)[2] <- "miRetrieve" 
+
+# Plot # of miRNAs with miRetrieve vs. PubMed (with letters)
+count_letter_plot <- df_count_letter %>%
+    mutate(miRNA = forcats::fct_reorder(miRNA, miRetrieve)) %>% 
+    pivot_longer(cols = c(miRetrieve, PubMed)) %>%
+    mutate(name = forcats::fct_rev(name)) %>% 
+    ggplot(aes(x = miRNA, y = value, fill = name)) +
+    geom_col(position = "dodge") +
+    coord_flip() +
+    guides(fill = guide_legend(reverse = TRUE, title = "Method")) +
+    scale_fill_brewer(palette = "Dark2") +
+    theme_classic()+
+    ylab("# of articles")+ 
+    scale_y_continuous(expand = c(0,0))
+
+# Combine plots (Figure 1)
+combined <- count_plot + count_letter_plot & theme(legend.position = "bottom")
+
+combined + 
+    plot_layout(guides = "collect") + 
+    plot_annotation(tag_levels = "A")
+
+# Calculate score [miRetrieve count] / [PubMed count] (no letters)
+df_count_no_letter %>% 
+    mutate(Score = miRetrieve / PubMed) %>%
+    mutate(Score = ifelse(is.infinite(Score), 0.01, Score)) %>%
+    summarise(mean(Score), sd(Score), sum(miRetrieve), sum(PubMed))
+
+# Calculate score [miRetrieve count] / [PubMed count] (with letters)
+df_count_letter %>% 
+    mutate(Score = miRetrieve / PubMed) %>%
+    mutate(Score = ifelse(is.infinite(Score), 0.01, Score)) %>%
+    summarise(mean(Score), sd(Score), sum(miRetrieve), sum(PubMed))
+```
+
+# Figure 2: Top miRNAs in atherosclerosis
+
+```{r}
+# Plot top miRNAs (Figure 2)
+plot_mir_count(df_atherosclerosis,
+               title = "Most frequently mentioned miRNAs in atherosclerosis")
+```
+
+# Figure 3: Top terms atherosclerosis
+
+```{r}
+# Generate new stop word list specifically for atherosclerosis to 
+# improve overview
+atherosclerosis_stop <- generate_stopwords(c("atherosclerosis",
+                                           "atherosclerotic",
+                                           "patients",
+                                           "pathogenesis",
+                                           "umbilical",
+                                           "huvecs",
+                                           "umbilical vein",
+                                           "human umbilical",
+                                           "cardiovascular disease",
+                                           "atherosclerosis however",
+                                           "atherosclerosis as",
+                                           "development atherosclerosis",
+                                           "pathogenesis atherosclerosis",
+                                           "oxidized low",
+                                           "vein endothelial",
+                                           "cardiovascular diseases",
+                                           "cells huvecs",
+                                           "necrosis factor",
+                                           "cells vsmcs",
+                                           "cells ecs",
+                                           "demonstrated mir",
+                                           "low density",
+                                           "atherosclerotic plaque",
+                                           "artery disease",
+                                           "muscle cells",
+                                           "tumor necrosis",
+                                           "coronary artery",
+                                           "dependent manner",
+                                           "vascular endothelial",
+                                           "patients coronary",
+                                           "serum levels",
+                                           "vascular smooth",
+                                           "α"),
+                                           combine_with = stopwords_miretrieve)
+
+# Plot single word terms for miR-155
+mir155_1 <- plot_mir_terms(df_atherosclerosis, "miR-155", 
+               stopwords = atherosclerosis_stop,
+               top = 15,
+               title = "Top single terms for miR-155 in atherosclerosis")
+
+# Plot 2-grams for miR-155
+mir155_2 <-  plot_mir_terms(df_atherosclerosis, "miR-155", token = "ngrams", n = 2,
+               stopwords = atherosclerosis_stop,
+               top = 14,
+               title = "Top 2-grams for miR-155 in atherosclerosis")
+
+# Plot single word terms for miR-21
+mir21_1 <-  plot_mir_terms(df_atherosclerosis, "miR-21",
+               stopwords = atherosclerosis_stop,
+               top = 11,
+               title = "Top single terms for miR-21 in atherosclerosis") 
+
+# Plot 2-grams for miR-21
+mir21_2 <- plot_mir_terms(df_atherosclerosis, "miR-21", token = "ngrams", n = 2,
+               stopwords = atherosclerosis_stop,
+               top = 13,
+               title = "Top 2-grams for miR-21 in atherosclerosis")
+
+# Combine plots (Figure 3)
+(mir155_1 | mir155_2) /
+    (mir21_1 | mir21_2) + plot_annotation(tag_levels = 'A')
+```
+
+# Figure 4: Targets in atherosclerosis
+
+```{r}
+# Add miRTarBase targets to df
+df_targets_ath_mir <- join_mirtarbase(df_atherosclerosis)
+
+# Plot targets of miR-155 and miR-21 (Figure 4)
+plot_target_mir_scatter(df_targets_ath_mir,
+                        mir = c("miR-155", "miR-21"),
+                        alpha = 1,
+                        title = "Targets of miR-21 and miR-155 in atherosclerosis")
+```
+
+# Load lung cancer abstracts
+
+```{r}
+# PubMed file of abstracts matching "lung cancer miRNA"
+file_lc <- "lungcancer_2021.txt"
+
+# Load abstracts
+df_lc <- read_pubmed(file_lc, topic = "Lung cancer") %>% 
+    # Subset for original articles
+    subset_research() %>%
+    # Extract miRNA names mentioned at least twice/abstract
+    extract_mir_df(threshold = 2)
+
+# Number of abstracts
+length(unique(df_lc[["PMID"]]))
+
+# Number of rows
+nrow(df_lc)
+```
+
+# Figure 5: Top Terms Lung cancer
+
+```{r}
+# Plot top miRNAs in lung cancer (Figure 5)
+plot_mir_count(df_lc,
+               title = "Most frequently mentioned miRNAs in lung cancer")
+```
+
+# Figure 6: Compare miR-21-term associations in atherosclerosis and lung cancer 
+
+```{r}
+# Generate stop words for miR-21 comparison to improve overview
+comparison_stop <- generate_stopwords(c("dependent manner",
+                                        "vascular endothelial",
+                                        "peripheral blood",
+                                        "serum mir",
+                                        "serum levels",
+                                        "tensin homolog",
+                                        "phosphatase tensin",
+                                        "α"),
+                                      combine_with = stopwords_miretrieve)
+
+# Combine `df_atherosclerosis` and `df_lc`
+df_athlc <- combine_df(df_atherosclerosis, df_lc)
+
+# Compare shared terms, single word
+comp_mir21_1 <- compare_mir_terms(df_athlc, "miR-21", top = 7,
+                                  title = "Comparison of miR-21 single term association",
+                                  stopwords = comparison_stop) +
+  ggplot2::scale_fill_manual(values = c("#F5793A", "#85C0F9"), name = "Topic")
+
+# Compare shared terms, 2-gram
+comp_mir21_2 <- compare_mir_terms(df_athlc, "miR-21", token = "ngrams", n = 2, top = 9,
+                                  title = "Comparison of miR-21 2-gram association",
+                                  stopwords = comparison_stop) +
+  ggplot2::scale_fill_manual(values = c("#F5793A", "#85C0F9"), name = "Topic")
+
+# Combine plot (Figure 6)
+plot_combined <- (comp_mir21_1 | comp_mir21_2) & theme(legend.position = "bottom")
+
+plot_combined + 
+    plot_annotation(tag_levels = 'A')  + 
+    plot_layout(guides = "collect")
+```
+
+# Figure 7: Potential miRNA biomarker in atherosclerosis and lung cancer
+
+```{r}
+# Potential miRNA biomarker in atherosclerosis
+ath_biomarker <- calculate_score_biomarker(df_atherosclerosis,
+                                           threshold = 5,
+                                           discard = TRUE)
+
+
+# Plot top 7 miRNA biomarker in atherosclerosis
+bm_ath_plot <- plot_mir_count(ath_biomarker, 
+                              top = 8,
+                              title = "Potential biomarker miRNAs in atherosclerosis")
+
+# Potential miRNA biomarker in lung cancer
+lc_biomarker <- calculate_score_biomarker(df_lc,
+                                           threshold = 5,
+                                           discard = TRUE)
+
+# Plot top 7 miRNA biomarker in lung cancer
+bm_lc_plot <- plot_mir_count(lc_biomarker, 
+                             top = 8,
+                             title = "Potential biomarker miRNAs in lung cancer")
+
+# Combine plot (Figure 7)
+(bm_ath_plot) + (bm_lc_plot) + plot_annotation(tag_levels = 'A')
+```
+
+# Extract chained miRNAs
+
+```{r}
+test_string <- "miR-221/222 are important in vasculature."
+
+extract_mir_string(test_string)
+```
+
+# Session info
+
+```{r}
+sessionInfo()
+```
